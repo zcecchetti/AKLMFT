@@ -1,0 +1,14 @@
+Plan for creating the webpage:
+
+general site layout will be:
+
+index.html (homepage)
+aboutMe.html
+contactMe.html
+resources.html
+
+I am going to model this site after https://www.sholltherapygroup.com/... to do so,
+I want to experiment with creating the site by making the big sections first, then moving
+into the smaller details, such as text and information... The layout should be complete
+and the site should look like a put together, yet empty, webpage before the actual text
+information is added.
