@@ -1,3 +1,155 @@
 :root {
-    background-color: blueviolet;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+}
+
+.link {
+    transition: .3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .link:hover {
+    background-color: rgb(222, 217, 217);
+} */
+
+.text {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+}
+
+.introText, .introImage {
+    width: 100%;
+    height: 100%;
+}
+
+.introImage {
+    background-color: rgb(85, 160, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    height: 30vh;
+    background-color: rgb(214, 159, 141);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.clinicianImage {
+    background-color: rgb(213, 167, 232);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinicianInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clinicianName {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clinicianSummary {
+    height: 100%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.therapyTypes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 66vh;
+    background-color: rgb(236, 242, 242);
+}
+
+.specialty {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+}
+
+.specialtyTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.specialtyText {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.specialtyTitle:hover, .specialtyText:hover {
+    background-color: rgb(219, 224, 224);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
