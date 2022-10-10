@@ -8,12 +8,25 @@ body {
     padding: 0;
 }
 
+.biggerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: -10vh;
+    height: 20vh;
+}
+
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 10vh;
+    width: 100%;
 }
 
 .logo {
@@ -34,15 +47,22 @@ body {
     align-items: center;
 }
 
-/* .link:hover {
-    background-color: rgb(222, 217, 217);
-} */
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(79, 78, 78);
+}
 
 .text {
     font-size: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.5;
+    color: #1C3A13;
 }
 
 .intro {
@@ -51,21 +71,43 @@ body {
     height: 85vh;
 }
 
-.introText, .introImage {
-    width: 100%;
-    height: 100%;
+.infoBlock {
+    padding: 5rem;
+}
+
+.introText {
+    width: 55vw;
 }
 
 .introImage {
-    background-color: rgb(85, 160, 85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(./images/forest1.jpeg);
+    width: 45vw;
+    height: 85vh;
+    background-attachment: fixed;
+    background-position: 30vw -35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* img {
+    max-height: 100%;
+    object-fit: cover;
+} */
+
+/* #sereneImage {
+    height: 100vh;
+    width: 40vw;
+    z-index: -1;
+    position: absolute;
+    top: 10vh;
+    left: 80vw;
+    transform: translate(-50%,0);
+    pointer-events: none
+} */
 
 .quote {
     height: 30vh;
-    background-color: rgb(214, 159, 141);
+    background-color: #B86F52;
 }
 
 .aboutMe {
