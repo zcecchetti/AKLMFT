@@ -1,6 +1,8 @@
 :root {
-    background-color: whitesmoke;
+    background-color: #F7F7F6;
     font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #1E110A;
 }
 
 body {
@@ -13,20 +15,22 @@ body {
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: -10vh;
-    height: 20vh;
+    top: -5vh;
+    height: 15vh;
+    border-bottom: 1px solid #1E110A;
 }
 
 .header {
+    background-color: #F7F7F6;
     display: flex;
     position: sticky;
     top: 0;
-    background-color: whitesmoke;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 10vh;
     width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .logo {
@@ -48,12 +52,12 @@ body {
 }
 
 a:link, a:visited {
-    color: black;
+    color: #1E110A;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: rgb(79, 78, 78);
+    color: #6E452F;
 }
 
 .text {
@@ -62,7 +66,6 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
     line-height: 1.5;
-    color: #1C3A13;
 }
 
 .intro {
@@ -72,7 +75,7 @@ a:hover, a:active {
 }
 
 .infoBlock {
-    padding: 5rem;
+    padding: 0 2rem;
 }
 
 .introText {
@@ -80,34 +83,18 @@ a:hover, a:active {
 }
 
 .introImage {
-    background-image: url(./images/forest1.jpeg);
+    background-image: url(./images/flowers1.jpeg);
     width: 45vw;
     height: 85vh;
     background-attachment: fixed;
-    background-position: 30vw -35vh;
+    background-position: 35vw -15vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* img {
-    max-height: 100%;
-    object-fit: cover;
-} */
-
-/* #sereneImage {
-    height: 100vh;
-    width: 40vw;
-    z-index: -1;
-    position: absolute;
-    top: 10vh;
-    left: 80vw;
-    transform: translate(-50%,0);
-    pointer-events: none
-} */
-
 .quote {
-    height: 30vh;
-    background-color: #B86F52;
+    height: 15vh;
+    background-color: #E3DDD6;
 }
 
 .aboutMe {
@@ -115,16 +102,21 @@ a:hover, a:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 95vh;
 }
 
 .clinicianImage {
-    background-color: rgb(213, 167, 232);
+    /* background-color: #f3efeb; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#clinicianAK {
+    height: 100%;
+    width: auto;
 }
 
 .clinicianInfo {
@@ -149,7 +141,7 @@ a:hover, a:active {
     font-size: 1.25rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .therapyTypes {
@@ -190,8 +182,34 @@ a:hover, a:active {
     background-color: rgb(219, 224, 224);
 }
 
+.contactMe {
+    height: calc(100vh - 1.25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.contactForm {
+    position: absolute;
+    top: 10vh;
+    left: 33vw;
+    z-index: 1;
+}
+
+.contactMeImage {
+    background-image: url(./images/fieldofflowers.avif);
+    background-position: 0 -25vh;
+    height: calc(100vh - 1.25rem);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 1.25rem;
 }
