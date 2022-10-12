@@ -5,6 +5,10 @@
     color: #394127;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -114,18 +118,18 @@ a:hover, a:active {
 }
 
 .introImage {
-    background-image: url(./images/flowers1.jpeg);
+    background-image: url(./images/flowers2.jpeg);
     width: 45vw;
     height: 70vh;
     background-attachment: fixed;
-    background-position: 35vw -15vh;
+    background-position: 41vw -15vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .quote {
     height: 15vh;
-    background-color: #E3DDD6;
+    background-color: #dad8d2;
 }
 
 .aboutMe {
@@ -170,7 +174,7 @@ a:hover, a:active {
     height: 100%;
 }
 
-.contactMe {
+#contactMe {
     height: calc(100vh - 1.25rem);
     display: flex;
     flex-direction: column;
