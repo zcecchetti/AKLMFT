@@ -11,7 +11,7 @@
     <div class="stickyHeader">
         <div class="biggerHeader">
             <div class="header">
-                <div class="logo">
+                <div id="logo">
                     ARIA KENNEY PSYCHOTHERAPY
                 </div>
                 <div class="links">
@@ -72,19 +72,41 @@
     </div>
 
     <div id="contactMe">
-        <div class="contactForm">
-            <div class="callToAction">
+        <div class="floatingInfo">
+            <div id="callToAction">
                 Take the first step
             </div>
-            <div id="formContainer">
 
+            <div id="formContainer">
+                <form id="contactForm" action="" onsubmit="return false">
+                    <div id="firstContainer" class="labelContainer">
+                        <label for="firstName" id="labelFirst">First Name</label>
+                        <input type="text" id="firstName" name="firstName" maxlength="20" required>
+                    </div>
+                    <div id="lastContainer" class="labelContainer">
+                        <label for="lastName" id="labelLast">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" maxlength="30" required>
+                    </div>
+                    <div id="phoneContainer" class="labelContainer">
+                        <label for="phoneNumber" id="labelPhone">Phone Number</label>
+                        <input type="phone" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div id="emailContainer" class="labelContainer">
+                        <label for="email" id="labelEmail">Email</label>
+                        <input type="email" id="email" name="email" maxlength="20" required>
+                    </div>
+                    <div id="messageContainer" class="labelContainer">
+                        <label for="patientMessage" id="labelMessage">Please type a brief message about your concerns</label>
+                        <textarea name="patientMessage" id="patientMessage" cols="30" rows="10" maxlength="2000" required></textarea>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="contactMeImage"></div>
     </div>
 
     <div class="footer">
-        &copy; Aria Kenney AMFT 2022
+        Copyright &copy; 2022 Aria Kenney. All Rights Reserved.
     </div>
 </body>
 
