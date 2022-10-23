@@ -73,7 +73,7 @@ a:hover, a:active {
     align-items: center;
     line-height: 1.5;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 #introContainer {
@@ -191,16 +191,17 @@ a:hover, a:active {
 #callToAction {
     grid-column: 1 / 2;
     align-self: flex-start;
-    justify-self: center;
-    padding: 3rem;
+    justify-self: flex-end;
+    padding: 3rem 10vw;
     font-size: 2rem;
-    color: #6E452F;
+    /* color: #6E452F; */
 }
 
 #formContainer {
     grid-column: 2 / 3;
-    align-self: center;
-    justify-self: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 90%;
 }
 
 #contactForm {
@@ -208,10 +209,10 @@ a:hover, a:active {
     width: 100%;
     height: 400px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3.25rem 3.25rem 1fr;
+    grid-template-rows: 3.25rem 3.25rem 1fr 1.5rem;
     column-gap: 8px;
     row-gap: 8px;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 #firstContainer {
@@ -257,15 +258,28 @@ a:hover, a:active {
 input {
     height: 100%;
     padding: 0 8px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1rem;
 }
 
 label {
     color: #6E452F;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 #patientMessage {
     height: 90%;
     padding: 8px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#contactFormSubmit {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
 }
 
 .contactMeImage {
