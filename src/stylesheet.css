@@ -2,7 +2,7 @@
     background-color: #f4f2f1;
     font-size: 16px;
     font-family: Verdana, Tahoma, sans-serif;
-    color: #394127;
+    color: #4b4d48;
 }
 
 html {
@@ -31,11 +31,11 @@ body {
     position: sticky;
     top: 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 5vw;
-    align-items:center;
+    align-items: center;
     height: 10vh;
-    width: 85vw;
+    width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
@@ -48,7 +48,7 @@ body {
 
 #logo {
     font-size: 2rem;
-    color: #6E452F;
+    /* color: #6E452F; */
 }
 
 .links {
@@ -66,7 +66,7 @@ body {
 }
 
 a:link, a:visited {
-    color: #1E110A;
+    color: #4b4d48;
     text-decoration: none;
 }
 
@@ -89,18 +89,27 @@ a:hover, a:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    padding: 5vh 0;
+    height: 80vh;
+    width: 100vw;
+    /* padding: 3vh 0; */
 }
 
 #intro {
     height: 100%;
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #eeeeee;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(./images/santabarbaravineyards.jpeg);
+    background-size: cover;
+    background-position: 0 -30vh;
+    border-radius: 2px;
 }
 
 .infoBlock {
@@ -110,6 +119,8 @@ a:hover, a:active {
 .introText {
     /* width: 50vw; */
     height: 80%;
+    color: white;
+    font-size: 2rem;
 }
 
 #takeAStepButton {
@@ -144,17 +155,20 @@ a:hover, a:active {
 .quote {
     margin: auto;
     height: 15vh;
-    width: 90vw;
-    background-color: #dad8d2;
+    width: 100vw;
+    /* margin: 1rem; */
+    background-color: #edd479;
+    border-radius: 2px;
 }
 
 .aboutMe {
     height: 95vh;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5vh 0;
+    /* padding: 3vh 0; */
+    border-radius: 2px;
 }
 
 .aboutMeContainer {
@@ -163,7 +177,9 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #EBEEEBff;
+    /* background-image: url(./images/santabarbaravineyards.jpeg); */
+    /* background-position: 0 -40vh; */
 }
 
 .clinicianImage {
@@ -193,23 +209,26 @@ a:hover, a:active {
 }
 
 #contactMe {
-    height: calc(100vh - 1.25rem);
+    height: calc(75vh - 1.25rem);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    background-color: #f4f2f1;
 }
 
 .floatingInfo {
     position: absolute;
-    top: 10vh;
-    left: 5vw;
-    width: max(50vw, 200px);
+    /* top: 10vh; */
+    /* left: 5vw; */
+    /* width: max(50vw, 200px); */
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 90%;
+    width: 90vw;
+    height: 60%;
+    /* background-color: rgb(227, 206, 121); */
     /* background-color: #67822855; */
 }
 
@@ -232,7 +251,7 @@ a:hover, a:active {
 #contactForm {
     display: grid;
     width: 100%;
-    height: 400px;
+    height: 300px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3.25rem 3.25rem 1fr 1.5rem;
     column-gap: 8px;
@@ -288,7 +307,7 @@ input {
 }
 
 label {
-    color: #6E452F;
+    /* color: #6E452F; */
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -308,10 +327,10 @@ label {
 }
 
 .contactMeImage {
-    background-image: url(./images/santabarbaravineyards.jpeg);
+    /* background-image: url(./images/santabarbaravineyards.jpeg); */
     /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, .8)), to(rgba(0,0,0,1))); */
-    background-position: 0 -25vh;
-    height: calc(100vh - 1.25rem);
+    /* background-position: 5vw; */
+    height: calc(75vh - 1.25rem);
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
