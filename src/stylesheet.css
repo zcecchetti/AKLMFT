@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+    
 .biggerHeader {
     display: flex;
     align-items: center;
@@ -21,36 +21,6 @@ body {
     top: -5vh;
     height: 15vh;
     width: 100vw;
-}
-
-#backgroundImageHolder {
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ), url(./images/santabarbaravineyards.jpeg);
-    background-size: cover;
-    background-position: 0 -30vh;
-}
-
-#header {
-    background-color: #f4f2f100;
-    display: flex;
-    top: 0;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 5rem;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-.stickyHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #logo {
@@ -77,343 +47,398 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active {
-    color: #6E452F;
+@media only screen and (min-width: 600px) {
+
+    #backgroundImageHolder {
+        background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+        ), url(./images/santabarbaravineyards.jpeg);
+        background-size: cover;
+        background-position: 0 -30vh;
+    }
+
+    #header {
+        background-color: #f4f2f100;
+        display: flex;
+        top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 5rem;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+        font-family: Verdana, Tahoma, sans-serif;
+    }
+
+    .stickyHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a:hover, a:active {
+        color: #6E452F;
+    }
+
+    .text {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #introContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100vw;
+    }
+
+    #practiceContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 100vw;
+    }
+
+    #intro {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+    }
+
+    #practiceImageHolder {
+        background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+        ), url(./images/bayarea.jpeg);
+        background-size: cover;
+        background-position: 0 -30vh;
+    }
+
+    #practice {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+    }
+
+    .infoBlock {
+        padding: 0 max(5rem, 5vw);
+    }
+
+    .introText {
+        height: 80%;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    #takeAStepButton {
+        width: 10rem;
+        height: 2rem;
+        font-size: 1.25rem;
+        background-color: #67822836;
+        transition: 0.3s;
+        color: #f4f2f1;
+        border: none;
+    }
+
+    #takeAStepButton:hover {
+        background-color: #546a20;
+    }
+
+    #takeAStepButton:active {
+        background-color: #678228;
+        transition: 0.1s;
+    }
+
+    .introImage {
+        background-image: url(./images/santabarbaravineyards.jpeg);
+        width: 50vw;
+        height: 70vh;
+        background-attachment: fixed;
+        background-position: 30vw -15vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .quote {
+        margin: auto;
+        height: 15vh;
+        width: 100vw;
+        background-color: #bec494;
+        border-radius: 2px;
+    }
+
+    .infoContainer {
+        height: 95vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+    }
+
+    .practiceContainer {
+        height: 65vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+    }
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #EBEEEBff;
+    }
+
+    #practiceInfoContainer {
+        display: grid;
+        height: 90%;
+        width: 75vw;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 3fr;
+    }
+
+    .listText {
+        font-size: 18px;
+        margin-left: 33%;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    ul {
+        margin: 2px;
+        list-style-type:circle;
+    }
+
+    #practiceSummary {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    #specialities {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    #ages {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    #issues {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    #communities {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .clinicianImage {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #clinicianAK {
+        height: 90%;
+        width: auto;
+    }
+
+    .clinicianInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        overflow-y: scroll;
+    }
+
+    #contactMe {
+        height: calc(55vh - 1.25rem);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f2f1;
+    }
+
+    .floatingInfo {
+        position: absolute;
+        z-index: 1;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 95vw;
+        height: 40%;
+    }
+
+    #callToAction {
+        grid-row: 1 / 2;
+        align-self: flex-start;
+        justify-self: flex-start;
+        padding: 3rem 10rem;
+        font-size: 2rem;
+    }
+
+    #action {
+        grid-row: 2 / 2;
+        padding: 0rem 10rem;
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+
+    #formContainer {
+        grid-column: 2 / 3;
+        align-self: flex-start;
+        justify-self: flex-start;
+        width: 90%;
+    }
+
+    #contactForm {
+        display: grid;
+        width: 100%;
+        height: 300px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.25rem 3.25rem 1fr 1.5rem;
+        column-gap: 8px;
+        row-gap: 8px;
+        padding: 3rem 0;
+    }
+
+    #firstContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #lastContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #phoneContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #emailContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #messageContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        height: 100%;
+    }
+
+    .labelContainer {
+        gap: 4px;
+    }
+
+    input {
+        height: 100%;
+        padding: 0 8px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-size: 1rem;
+    }
+
+    label {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+
+    #patientMessage {
+        height: 90%;
+        padding: 8px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-size: 1rem;
+    }
+
+    #contactFormSubmit {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        width: 100px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .contactMeImage {
+        height: calc(75vh - 1.25rem);
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.25rem;
+    }
 }
 
-.text {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.5;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+@media only screen and (max-width: 600px) {
+    
+    .biggerHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: -5vh;
+        height: 15vh;
+        width: 100vw;
+    }
 
-#introContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-    width: 100vw;
-}
+    #backgroundImageHolder {
+        background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ), url(./images/santabarbaravineyards.jpeg);
+        /* background-size: cover; */
 
-#practiceContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    width: 100vw;
-}
+        width: 100vw;
+        /* background-position: 0 -30vh; */
+    }
 
-#intro {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-}
-
-#practiceImageHolder {
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ), url(./images/bayarea.jpeg);
-    background-size: cover;
-    background-position: 0 -30vh;
-}
-
-#practice {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-}
-
-.infoBlock {
-    padding: 0 max(5rem, 5vw);
-}
-
-.introText {
-    height: 80%;
-    color: white;
-    font-size: 1.5rem;
-}
-
-#takeAStepButton {
-    width: 10rem;
-    height: 2rem;
-    font-size: 1.25rem;
-    background-color: #67822836;
-    transition: 0.3s;
-    color: #f4f2f1;
-    border: none;
-}
-
-#takeAStepButton:hover {
-    background-color: #546a20;
-}
-
-#takeAStepButton:active {
-    background-color: #678228;
-    transition: 0.1s;
-}
-
-.introImage {
-    background-image: url(./images/santabarbaravineyards.jpeg);
-    width: 50vw;
-    height: 70vh;
-    background-attachment: fixed;
-    background-position: 30vw -15vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.quote {
-    margin: auto;
-    height: 15vh;
-    width: 100vw;
-    background-color: #bec494;
-    border-radius: 2px;
-}
-
-.infoContainer {
-    height: 95vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-}
-
-.practiceContainer {
-    height: 65vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-}
-
-.aboutMeContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #EBEEEBff;
-}
-
-#practiceInfoContainer {
-    display: grid;
-    height: 90%;
-    width: 75vw;
-    align-items: flex-start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr 3fr;
-}
-
-.listText {
-    font-size: 18px;
-    margin-left: 33%;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-ul {
-    margin: 2px;
-    list-style-type:circle;
-}
-
-#practiceSummary {
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
-}
-
-#specialities {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-}
-
-#ages {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-}
-
-#issues {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-}
-
-#communities {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-}
-
-.clinicianImage {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#clinicianAK {
-    height: 90%;
-    width: auto;
-}
-
-.clinicianInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90%;
-    overflow-y: scroll;
-}
-
-#contactMe {
-    height: calc(55vh - 1.25rem);
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f2f1;
-}
-
-.floatingInfo {
-    position: absolute;
-    z-index: 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    width: 95vw;
-    height: 40%;
-}
-
-#callToAction {
-    grid-row: 1 / 2;
-    align-self: flex-start;
-    justify-self: flex-start;
-    padding: 3rem 10rem;
-    font-size: 2rem;
-}
-
-#action {
-    grid-row: 2 / 2;
-    padding: 0rem 10rem;
-    align-self: flex-start;
-    justify-self: flex-end;
-}
-
-/* #action:link {
-    color: #4b4d48;
-} */
-
-#formContainer {
-    grid-column: 2 / 3;
-    align-self: flex-start;
-    justify-self: flex-start;
-    width: 90%;
-}
-
-#contactForm {
-    display: grid;
-    width: 100%;
-    height: 300px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3.25rem 3.25rem 1fr 1.5rem;
-    column-gap: 8px;
-    row-gap: 8px;
-    padding: 3rem 0;
-}
-
-#firstContainer {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-#lastContainer {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-#phoneContainer {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-#emailContainer {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-#messageContainer {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    height: 100%;
-}
-
-.labelContainer {
-    gap: 4px;
-}
-
-input {
-    height: 100%;
-    padding: 0 8px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 1rem;
-}
-
-label {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-
-#patientMessage {
-    height: 90%;
-    padding: 8px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 1rem;
-}
-
-#contactFormSubmit {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-    width: 100px;
-    justify-self: center;
-    align-self: center;
-}
-
-.contactMeImage {
-    height: calc(75vh - 1.25rem);
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.25rem;
 }
