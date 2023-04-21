@@ -13,33 +13,19 @@ body {
     margin: 0;
     padding: 0;
 }
-    
-.biggerHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -5vh;
-    height: 15vh;
-    width: 100vw;
-}
 
 #logo {
-    font-size: 2rem;
     color: #f4f2f1;
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    width: 35vw;
 }
 
 .link {
     transition: .3s;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 a:link, a:visited {
@@ -47,8 +33,125 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 600px) {
+#header {
+    background-color: #f4f2f100;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    padding: 0 5rem;
+    align-items: center;
+    width: 100vw;
+    font-family: Verdana, Tahoma, sans-serif;
+}
 
+a:hover, a:active {
+    color: #6E452F;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.introText {
+    height: 80%;
+    color: white;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #header {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem 0rem;
+        gap: 1rem;
+    }
+    .biggerHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        top: -5vh;
+        height: 30vh;
+        /* width: 100vw; */
+    }
+
+    #logo {
+        font-size: 1.3rem;
+    }
+
+    .links {
+        width: 90vw;
+        font-size: 1rem;
+        justify-content: space-evenly;
+        /* padding: 0rem 1rem; */
+    }
+
+    .link {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #introContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 70vh;
+        margin: 0 2rem;
+    }
+
+    #backgroundImageHolder {
+        background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ), url(./images/santabarbaravineyards.jpeg);
+        background-size: cover;
+        right: 10vw;
+        /* width: 100vw; */
+        /* background-position: 0 -5vh; */
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    #intro {
+        gap: 15rem;
+    }
+
+    .introText {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+
+    .biggerHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -5vh;
+        height: 15vh;
+        /* width: 100vw; */
+    }
     #backgroundImageHolder {
         background: 
         linear-gradient(
@@ -56,41 +159,37 @@ a:link, a:visited {
         rgba(0, 0, 0, 0.3)
         ), url(./images/santabarbaravineyards.jpeg);
         background-size: cover;
-        background-position: 0 -30vh;
+        /* background-position: 0 -30vh; */
     }
 
     #header {
-        background-color: #f4f2f100;
-        display: flex;
-        top: 0;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 5rem;
-        align-items: center;
         height: 10vh;
-        width: 100vw;
-        font-family: Verdana, Tahoma, sans-serif;
+        flex-direction: row;
     }
 
-    .stickyHeader {
+    #logo {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .links {
+        width: 35vw;
+    }
+
+    .link {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-    }
-
-    a:hover, a:active {
-        color: #6E452F;
     }
 
     .text {
         font-size: 18px;
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: center;
         line-height: 1.5;
         font-family: 'Trebuchet MS', Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased; */
     }
 
     #introContainer {
@@ -146,8 +245,6 @@ a:link, a:visited {
     }
 
     .introText {
-        height: 80%;
-        color: white;
         font-size: 1.5rem;
     }
 
@@ -415,30 +512,4 @@ a:link, a:visited {
         align-items: center;
         height: 1.25rem;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    
-    .biggerHeader {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        top: -5vh;
-        height: 15vh;
-        width: 100vw;
-    }
-
-    #backgroundImageHolder {
-        background: 
-        linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.3)
-        ), url(./images/santabarbaravineyards.jpeg);
-        /* background-size: cover; */
-
-        width: 100vw;
-        /* background-position: 0 -30vh; */
-    }
-
 }
