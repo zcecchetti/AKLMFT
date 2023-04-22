@@ -52,7 +52,8 @@ a:hover, a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.5;
+    /* text-align: justify; */
+    line-height: 1.3;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -67,6 +68,23 @@ a:hover, a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 2px;
+}
+
+#takeAStepButton {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    transition: 0.3s;
+    color: #f4f2f1;
+    border: none;
+}
+
+.infoContainer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2px;
 }
 
@@ -86,7 +104,7 @@ a:hover, a:active {
         align-items: center;
         justify-content: flex-start;
         top: -5vh;
-        height: 30vh;
+        height: 37vh;
         /* width: 100vw; */
     }
 
@@ -112,7 +130,7 @@ a:hover, a:active {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 70vh;
+        height: 63vh;
         margin: 0 2rem;
     }
 
@@ -140,6 +158,37 @@ a:hover, a:active {
         font-size: 1.1rem;
     }
     
+    #takeAStepButton {
+        background-color: #546a20;
+    }
+
+    .infoContainer {
+        height: 80vh;
+    }
+
+    .clinicianImage {
+        width: auto;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+
+    #clinicianAK {
+        height: 13rem;
+        width: auto;
+        padding: 0px 0rem 0 1rem;
+    }
+
+    /* .aboutMeContainer {
+        padding: 0px 0rem 0 .5rem;
+    } */
+
+    .clinicianSummary {
+        padding: 0px 1rem 0 1rem;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -249,13 +298,13 @@ a:hover, a:active {
     }
 
     #takeAStepButton {
-        width: 10rem;
+        /* width: 10rem;
         height: 2rem;
-        font-size: 1.25rem;
+        font-size: 1.25rem; */
         background-color: #67822836;
-        transition: 0.3s;
+        /* transition: 0.3s;
         color: #f4f2f1;
-        border: none;
+        border: none; */
     }
 
     #takeAStepButton:hover {
@@ -287,11 +336,6 @@ a:hover, a:active {
 
     .infoContainer {
         height: 95vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2px;
     }
 
     .practiceContainer {
