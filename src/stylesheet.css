@@ -163,7 +163,7 @@ a:hover, a:active {
     }
 
     .infoContainer {
-        height: 80vh;
+        height: 65vh;
     }
 
     .clinicianImage {
@@ -179,14 +179,30 @@ a:hover, a:active {
         height: 13rem;
         width: auto;
         padding: 0px 0rem 0 1rem;
+        margin: 8px;
     }
 
     /* .aboutMeContainer {
         padding: 0px 0rem 0 .5rem;
     } */
 
+    .aboutMeContainer {
+        gap: 2rem;
+    }
+
     .clinicianSummary {
         padding: 0px 1rem 0 1rem;
+    }
+
+    #clinicianSummary {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    p {
+        padding: 0px 1rem 0 1rem;
+        margin: 0;
     }
 
 }
@@ -555,5 +571,11 @@ a:hover, a:active {
         justify-content: center;
         align-items: center;
         height: 1.25rem;
+    }
+
+    p {
+        visibility: hidden;
+        height: 0;
+        width: 0;
     }
 }
