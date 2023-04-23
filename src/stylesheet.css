@@ -114,6 +114,16 @@ a:hover, a:active {
     height: 1.25rem;
 }
 
+#practiceImageHolder {
+    background: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(./images/santabarbaravineyards.jpeg);
+    background-size: cover;
+    /* background-position: 0 -30vh; */
+}
+
 @media screen and (max-width: 600px) {
 
     #header {
@@ -246,6 +256,21 @@ a:hover, a:active {
         font-size: .65rem;
     }
 
+    .listText {
+        font-size: 12px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.3;
+    }
+
+    .practiceContainer {
+        padding: 1rem;
+    }
+
+    #practiceImageHolder {
+        height: 16vh;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -324,16 +349,6 @@ a:hover, a:active {
         justify-content: center;
         align-items: center;
         border-radius: 2px;
-    }
-
-    #practiceImageHolder {
-        background: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
-        ), url(./images/bayarea.jpeg);
-        background-size: cover;
-        background-position: 0 -30vh;
     }
 
     #practice {
