@@ -88,6 +88,32 @@ a:hover, a:active {
     border-radius: 2px;
 }
 
+.quote {
+    margin: auto;
+    height: 15vh;
+    /* width: 100vw; */
+    background-color: #bec494;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f2f1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25rem;
+}
+
 @media screen and (max-width: 600px) {
 
     #header {
@@ -163,7 +189,7 @@ a:hover, a:active {
     }
 
     .infoContainer {
-        height: 65vh;
+        height: 59vh;
     }
 
     .clinicianImage {
@@ -202,7 +228,22 @@ a:hover, a:active {
 
     p {
         padding: 0px 1rem 0 1rem;
-        margin: 0;
+        margin: -10px 9px;
+    }
+
+    #contactMe {
+        height: 20vh;
+        margin: 1rem 2rem;
+    }
+
+    .floatingInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer {
+        font-size: .65rem;
     }
 
 }
@@ -443,12 +484,6 @@ a:hover, a:active {
 
     #contactMe {
         height: calc(55vh - 1.25rem);
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #f4f2f1;
     }
 
     .floatingInfo {
@@ -564,13 +599,6 @@ a:hover, a:active {
         width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 1.25rem;
     }
 
     p {
